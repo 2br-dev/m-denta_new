@@ -1,0 +1,365 @@
+body {
+  min-height: 100vh;
+}
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Calibri', cursive;
+}
+.header a {
+  text-decoration: none;
+  color: #00036f;
+  font-size: 14px;
+}
+.header a:hover {
+  text-decoration: underline;
+  transition: .3s ease;
+}
+.header li {
+  list-style: none;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.header-logo {
+  width: 90px;
+}
+.header-navigation {
+  width: 560px;
+}
+.header-navigation__menu a {
+  font-size: 18px;
+}
+.header-apps {
+  display: flex;
+  flex-direction: column;
+}
+.header-apps img {
+  opacity: .9;
+}
+.header-apps img:hover {
+  opacity: 1;
+  transition: .37s ease;
+}
+.header-basket {
+  width: 16px;
+  padding-right: 20px;
+}
+.header-contacts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.header-contacts__city {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.header-contacts__city:hover {
+  text-decoration: none !important;
+  transition: .37s ease;
+}
+.header-contacts__phone {
+  font-weight: bold;
+  font-size: 24px !important;
+  color: #000 !important;
+  margin-top: 12px;
+}
+.header .active {
+  color: #febf28;
+}
+.akvatory {
+  font-family: 'Calibri', cursive;
+  padding-bottom: 200px;
+}
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+.content-header {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.circle,
+.bottle {
+  width: 700px;
+  margin: 70px auto 0;
+  height: 700px;
+  background: url('/img/akvatory/circle.png') no-repeat center / cover;
+}
+.circle {
+  position: relative;
+}
+.bottle {
+  margin: 0;
+  top: 70px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: url(/img/akvatory/Горячий\ ключ_вотерзнак\ Акватория.png) no-repeat center / contain;
+  background-size: 35%;
+}
+.bottle h2 {
+  text-align: center;
+  font-size: 24px;
+  max-width: 300px;
+  margin: 50px auto 0;
+  color: #00036f;
+}
+.bottle button {
+  bottom: 200px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 35%;
+  height: 40px;
+  background: #c62828;
+  color: white;
+  border: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.bottle button:hover {
+  cursor: pointer;
+  background: #f44336;
+  transition: .37s ease;
+}
+.bottle-small {
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #00036f;
+  background: white url("/img/akvatory/bottle.png") no-repeat center / contain;
+}
+.bottle-small:hover {
+  cursor: pointer;
+  border-color: #febf28;
+  transition: .37s ease;
+}
+.bottle-buy,
+.bottle-buy__minus,
+.bottle-buy__plus {
+  background: #00036f;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  right: -55px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bottle-buy:hover,
+.bottle-buy__minus:hover,
+.bottle-buy__plus:hover {
+  cursor: pointer;
+  background: #000489;
+  transition: .37s ease;
+}
+.bottle-buy__controls,
+.bottle-buy__minus__controls,
+.bottle-buy__plus__controls {
+  display: none;
+}
+.bottle-buy__controls p,
+.bottle-buy__minus__controls p,
+.bottle-buy__plus__controls p {
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+  color: #00036f;
+  position: absolute;
+  right: -113px;
+  top: -13px;
+  bottom: 0;
+  margin: auto;
+}
+.bottle-buy__minus,
+.bottle-buy__minus__minus,
+.bottle-buy__plus__minus,
+.bottle-buy__plus,
+.bottle-buy__minus__plus,
+.bottle-buy__plus__plus {
+  right: -125px;
+  width: 50px;
+  height: 50px;
+}
+.bottle-buy__plus,
+.bottle-buy__minus__plus,
+.bottle-buy__plus__plus {
+  top: -12%;
+}
+.bottle-buy__minus,
+.bottle-buy__minus__minus,
+.bottle-buy__plus__minus {
+  top: 12%;
+}
+.bottle-info {
+  width: 500px;
+  margin: 0 auto;
+  height: 400px;
+  position: relative;
+}
+.bottle-info__about {
+  position: absolute;
+  right: 10px;
+}
+.bottle-info__about a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #00036f;
+}
+.bottle-info__about a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottle-info__about:before {
+  content: '';
+  left: -40px;
+  position: absolute;
+  width: 40px;
+  height: 65px;
+  background: url(/img/akvatory/sprite.png) no-repeat 90% 11%;
+  background-size: 200px;
+}
+.bottle-info__prices {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  height: 50%;
+  margin: auto;
+}
+.bottle-info__prices p {
+  margin: 30px 0;
+  font-size: 16px;
+  position: relative;
+}
+.bottle-info__prices p b {
+  font-size: 24px;
+}
+.bottle-info__prices p::before {
+  content: '';
+  left: -40px;
+  top: 5px;
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: url(/img/akvatory/sprite.png) no-repeat 37% 50%;
+  background-size: 200px;
+}
+.bottle-info__prices p:nth-child(2):before {
+  background: url(/img/akvatory/sprite.png) no-repeat 37% 11%;
+  background-size: 200px;
+}
+.bottle-info__prices p:nth-child(3):before {
+  background: url(/img/akvatory/sprite.png) no-repeat 70% 11%;
+  background-size: 200px;
+}
+.bottle-info__note {
+  position: absolute;
+  right: -20px;
+  bottom: 40px;
+  font-size: 16px;
+  width: 130px;
+  text-align: center;
+}
+.information {
+  width: 700px;
+  margin: 150px auto 0;
+}
+.information-header {
+  text-align: center;
+  position: relative;
+}
+.information-header__link {
+  margin: 0 auto;
+  width: 100px;
+  height: 50px;
+  /* as the half of the width */
+  border-bottom-left-radius: 52px;
+  /* 100px of height + 10px of border */
+  border-bottom-right-radius: 52px;
+  /* 100px of height + 10px of border */
+  border: 2px solid #d0d0d0;
+  border-top: 0;
+}
+.information-header__link p {
+  margin: 0 auto 10px;
+  line-height: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+}
+.information-header__link img {
+  width: 25px;
+}
+.information-header__link::before,
+.information-header__link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  height: 2px;
+  width: 300px;
+  background: #d0d0d0;
+  left: 150px;
+  z-index: 1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.information-header__link::after {
+  left: unset;
+  right: -150px;
+}
+.information-text {
+  font-size: 16px;
+}
+.information-text p {
+  text-indent: 1.5em;
+  margin-top: 20px;
+  text-align: justify;
+}
+.information-text__center {
+  text-align: center !important;
+  text-transform: uppercase;
+}
+.information-certificate {
+  margin-top: 50px;
+  text-align: center;
+}
+.information-certificate img {
+  width: 150px;
+}
+.information-certificate img:hover {
+  box-shadow: 0 0 0 2px #00036f;
+  transition: .37s ease;
+}
+.active {
+  border-color: #febf28 !important;
+}
+.cloned {
+  background: red;
+  visibility: hidden;
+}
